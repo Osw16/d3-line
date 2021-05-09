@@ -84,7 +84,7 @@ export default {
         // render path element with D3's General Update Pattern
         svg
           .selectAll(".line")
-          .data(data_) // pass entire data array
+          .data(props.factsData) // pass entire data array
           .join("path")
           .attr("class", "line")
           .attr("stroke", "green")
